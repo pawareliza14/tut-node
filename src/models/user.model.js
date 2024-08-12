@@ -3,7 +3,7 @@ import bcrypt from "bcrypt";
 import jwt from "jsonwebtoken";
 
 const userSchema = new mongoose.Schema({
-    useranme: {
+    username: {
         type: String,
         required: true,
         unique: true,
@@ -20,7 +20,7 @@ const userSchema = new mongoose.Schema({
         trim: true,
     },
 
-    fullname: {
+    fullName: {
         type: String,
         required: true,
         trim: true,
@@ -33,7 +33,7 @@ const userSchema = new mongoose.Schema({
        
     },
 
-    coverimage: {
+    coverImage: {
         type: String, //cloudinary url
     },
 
